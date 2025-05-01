@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .navbar a:hover {
+    color: #f0f0f0;
+    transition: color 0.3s ease;
+  }
+  
+  .github-btn {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  .github-btn:hover {
+    background-color: #f0f0f0;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .main {
+    padding: 2rem;
+    text-align: center;
+  }
+  
