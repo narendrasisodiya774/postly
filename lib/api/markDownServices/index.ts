@@ -16,13 +16,20 @@ export function getAllPosts(): PostMarkdownProps[] {
       const fullPath = path.join(postsDir, fileName);
       const fileContents = fs.readFileSync(fullPath, 'utf8');
       const { data } = matter(fileContents);
+
+      // Required fields check
       if (!data.id || !data.title || !data.date) return null;
 
       return {
         id: data.id,
         title: data.title,
         date: data.date,
-        contentHtml: '',
+        author: data.author || 'Unknown',
+        description: data.description || '',
+        tags: data.tags || [],
+        coverImage: data.coverImage || '',
+        readingTime: data.readingTime || '5 min',
+        contentHtml: '', // You can populate this in detail view only
       };
     })
     .filter(Boolean) as PostMarkdownProps[];
@@ -31,6 +38,7 @@ export function getAllPosts(): PostMarkdownProps[] {
 export async function getPostById(id: string): Promise<PostMarkdownProps> {
   const filePath = path.join(postsDir, `${id}.md`);
   const fileContents = fs.readFileSync(filePath, 'utf8');
+
   const { data, content } = matter(fileContents);
   const contentHtml = (await remark().use(html).process(content)).toString();
 
@@ -38,6 +46,11 @@ export async function getPostById(id: string): Promise<PostMarkdownProps> {
     id: data.id,
     title: data.title,
     date: data.date,
+    author: data.author || 'Unknown',
+    description: data.description || '',
+    tags: data.tags || [],
+    coverImage: data.coverImage || '',
+    readingTime: data.readingTime || '5 min',
     contentHtml,
   };
 }

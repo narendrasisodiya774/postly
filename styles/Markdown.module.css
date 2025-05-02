@@ -1,4 +1,4 @@
-.container {
+/* .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
@@ -43,5 +43,76 @@
   
   .link:hover {
     color: #2c3e50;
+  }
+   */
+
+
+
+
+   .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cardImageWrapper {
+    position: relative;
+    height: 180px;
+  }
+  
+  .cardImage {
+    object-fit: contain;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .cardContent {
+    padding: 1rem;
+  }
+  
+  .cardMeta {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.5rem;
+  }
+  
+  .cardTags {
+    margin-top: 0.5rem;
+  }
+  
+  .tag {
+    display: inline-block;
+    background: #f3f3f3;
+    color: #333;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    margin-right: 0.3rem;
   }
   

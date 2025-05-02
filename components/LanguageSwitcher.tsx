@@ -1,4 +1,3 @@
-// components/LanguageSwitcher.tsx
 import { useRouter } from 'next/router';
 
 const LanguageSwitcher = () => {
@@ -9,7 +8,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div>
+    <div style={{position:'absolute', right:'0px'}}>
       {locales?.map((lng) => (
         <button
           key={lng}

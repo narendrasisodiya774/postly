@@ -24,7 +24,12 @@ export interface PostMarkdownProps {
   id: string;
   title: string;
   date: string;
-  contentHtml: string;
+  author?: string;
+  description?: string;
+  tags?: string[];
+  coverImage?: string;
+  readingTime?: string;
+  contentHtml?: string;
 }
 
 export interface PostPageProps {

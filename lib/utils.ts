@@ -6,14 +6,14 @@ const useRouteGuard = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const user = sessionStorage.getItem("user");
+      const user = localStorage.getItem("user");
 
       if (!user) {
-        router.replace("/signup");
+        router.replace("/login");
       }
     }
     else{
-        router.replace("/");
+        router.replace("/markdown");
     }
   }, []);
 };

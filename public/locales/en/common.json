@@ -2,9 +2,31 @@
     "welcome": "Welcome to NextBlog",
     "description": "Your tech journey starts here. Discover insightful blogs, tutorials, and tips.",
     "learn_more": "Learn More About Us",
-    "contact": "Contact Us",
-    "about_title": "About Us",
-    "about_description": "We write tech blogs and tutorials to help developers grow their skills.",
     "contact_title": "Contact Us",
-    "contact_description": "Reach out to us through our email or social media platforms."
+    "contact_name": "Your Name",
+    "contact_name_placeholder": "Enter your full name",
+    "contact_email": "Email Address",
+    "contact_email_placeholder": "Enter your email",
+    "contact_message": "Message",
+    "contact_message_placeholder": "Type your message here...",
+    "contact_submit": "Send Message",
+    "contact_description": "Reach out to us through our email or social media platforms.",
+    "about_title": "About This Blog Project",
+    "about_description": "A modern, fully responsive Markdown-based blog built with Next.js and TypeScript.",
+    "project_goal_title": "Project Purpose",
+    "project_goal_description": "This blog is designed for developers to share technical articles using Markdown. It's easy to manage, SEO-optimized, and supports internationalization.",
+    "features_title": "Key Features",
+    "feature_1": "📖 Markdown-based post system",
+    "feature_2": "⚡ Static generation for fast loading",
+    "feature_3": "🌐 Multilingual support with i18n",
+    "feature_4": "📱 Fully responsive UI",
+    "feature_5": "🎨 Clean, accessible design",
+    "tech_stack_title": "Tech Stack",
+    "tech_stack_description": "Built using Next.js, TypeScript, CSS Modules, and Markdown for content management.",
+    "inspiration_title": "Inspired By",
+    "latest_blogs": "Latest Markdown Posts",
+     "view_all_blogs": "View All Markdowns"
+
+
+
 }
