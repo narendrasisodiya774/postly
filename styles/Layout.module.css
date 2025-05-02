@@ -1,53 +1,124 @@
-.header {
+   .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    justify-content: space-between;
     padding: 1rem;
+    background-color: #333;
+    border-bottom: 1px solid #eaeaea;
     position: sticky;
     top: 0;
     z-index: 100;
   }
   
-  .logo img {
-    height: 50px;
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menuToggle {
+    display: none;
+    background: none;
+    font-size: 1.8rem;
+    border: none;
+    cursor: pointer;
   }
   
   .navbar {
     display: flex;
-    gap: 1.5rem;
+    align-items: center;
+    gap: 1.2rem;
   }
   
   .navbar a {
-    color: #fff;
     text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .navbar a:hover {
-    color: #f0f0f0;
-    transition: color 0.3s ease;
-  }
-  
-  .github-btn {
-    background-color: #333;
     color: #fff;
-    border: 2px solid #fff;
-    padding: 0.5rem 1rem;
+    font-weight: 500;
+  }
+  
+  .authSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .loginButton {
+    padding: 0.4rem 0.8rem;
+    background: #0070f3;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  
+  .profileButton {
+    background: none;
+    border: none;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    text-transform: uppercase;
+    /* border-radius: 50px; */
+
+  }
+  .imgProfile {
+    background-color: white;
+    border-radius: 20px;
   }
   
-  .github-btn:hover {
-    background-color: #f0f0f0;
-    color: #333;
-    transition: all 0.3s ease;
+  .dropdownMenu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 20;
   }
   
-  .main {
-    padding: 2rem;
-    text-align: center;
+  .userName {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .logoutButton {
+    background: #e53e3e;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .menuToggle {
+      display: block;
+      color: white;
+    }
+  
+    .navbar {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+      display: none;
+    }
+  
+    .navOpen {
+      display: flex;
+    }
+  
+    .navbar a {
+      padding: 0.5rem 0;
+      width: 100%;
+    }
+  
+    .authSection {
+      width: 50px;
+      justify-content: center;
+      text-align: center;
+
+    }
   }
   

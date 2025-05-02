@@ -1,4 +1,4 @@
-/* styles/Login.module.css */
+/* styles/Login.module.css
 .loginContainer {
     display: flex;
     justify-content: center;
@@ -65,5 +65,102 @@
     margin-bottom: 15px;
     font-size: 0.9rem;
     text-align: center;
+  }
+   */
+
+
+   .loginContainerEnhanced {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loginHeading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 24px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .loginFormBox {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loginLabel {
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .loginInputField {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    transition: border 0.2s ease-in-out;
+  }
+  
+  .loginInputField:focus {
+    border-color: #0070f3;
+    outline: none;
+  }
+  
+  .loginSubmitBtn {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .loginSubmitBtn:hover {
+    background-color: #0059c1;
+  }
+  
+  .loginErrorMessage {
+    background-color: #ffe6e6;
+    color: #d8000c;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .signupPromptBox {
+    margin-top: 24px;
+    text-align: center;
+  }
+  
+  .signupPromptText {
+    margin-right: 8px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .signupRedirectBtn {
+    background: none;
+    border: none;
+    color: #0070f3;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+    padding: 0;
+  }
+  
+  .signupRedirectBtn:hover {
+    color: #0059c1;
   }
   
