@@ -50,7 +50,7 @@ const PostPage = ({ post }: MarkDownDetailProps) => (
 
       <div
         className={styles.content}
-        dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+        dangerouslySetInnerHTML={{ __html: post.contentHtml ?? '' }}
       />
     </article>
   </Layout>
